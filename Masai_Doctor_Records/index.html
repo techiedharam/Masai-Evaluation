@@ -1,13 +1,60 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<html>
+  <head>
     <title>Masai Doctor Records</title>
-</head>
-<body>
-
-    <h1>Masai Doctor Records</h1>
-    <script src="script.js"></script>
-</body>
+    <link rel="stylesheet" href="style.css">
+  </head>
+  <body>
+    <h1> <U>HOSPITAL - DOCTOR RECORDS </U></h1>
+    <!-- Use this form for data input  -->
+    <div class="container">
+    <form id="form">
+      <label for="name">Doctor Name</label>
+      <input placeholder="Name" type="text" id="name" />
+      <label for="doctor_id">Doctor ID</label>
+      <input placeholder="Doctor ID" type="text" id="doctor_id" />
+      <label for="specialization">Specialization</label>
+      <select id="specialization">
+        <option value="">Select Specialization</option>
+        <option value="Dermatologist">Dermatologist</option>
+        <option value="Dentist">Dentist</option>
+        <option value="Gynecologist">Gynecologist</option>
+      </select>
+      <label for="experience">Experience</label>
+      <input placeholder="experience" type="number" id="experience" />
+      <label for="email">Email</label>
+      <input placeholder="Email" type="email" id="email" />
+      <label for="mobile">Mobile No.</label>
+      <input placeholder="Mobile No." type="number" id="mobile" />
+      <input type="submit" value="Submit" id="submit-btn"/>
+    </form>
+   
+    <!-- Use this Select tag for filter part  -->
+    <!-- <select id="filter"> 
+      <option value="">Select Specialization</option>
+      <option value="Dermatologist">Dermatologist</option>
+      <option value="Dentist">Dentist</option>
+      <option value="Gynecologist">Gynecologist</option>
+    </select> -->
+    <table>
+      <thead>
+        <tr>
+          <th>Name</th>
+          <th>Doctor ID</th>
+          <th>Specialization</th>
+          <th>Experience in Years</th>
+          <th>Email</th>
+          <th>Mobile No</th>
+          <th>Role</th>
+          <th>Delete</th>
+        </tr>
+      </thead>
+      <tbody>
+        <!-- Append Rows here using JS & DOM  -->
+      </tbody>
+    </table>
+  </div>  
+  </body>
+  
+  <script src="script.js"></script>
 </html>
