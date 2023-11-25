@@ -3,6 +3,7 @@ h1 {
    text-align: center;
    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
    color: #0567ac;
+   font-size: 35px;
 }
 .container {
     display: flex;
@@ -15,7 +16,7 @@ h1 {
 #form {
     width: 25%;
     margin: auto;
-    margin-top: 3.5%;
+    margin-top: 1.5%;
     display: flex;
     flex-direction: column;
     align-items: flex-start;
@@ -51,7 +52,11 @@ h1 {
     border: none;
  }
 
-
+ /* filter css*/
+ #filter {
+   height: 40px;
+   margin-left: 83%;
+ }
 
 
 /* Table CSS  */
@@ -60,7 +65,7 @@ table {
     border-collapse: collapse;
     width: 65%;
     margin: auto;
-    margin-top: 50px;
+    margin-top: 1.5%;
     text-align: center;
   }
   
